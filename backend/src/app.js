@@ -1,7 +1,14 @@
 import express from "express";
+import cors from "cors";
 import postRoute from "./routes/post.route.js"
 
 const app = express();
+
+// app.use(cors({
+//     origin: "http://localhost:5173"
+// }));
+
+app.use(cors());
 app.use(express.json());
 
 // test route

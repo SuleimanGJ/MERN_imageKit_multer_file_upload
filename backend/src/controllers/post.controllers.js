@@ -1,10 +1,8 @@
 import uploadFile from "../services/storage.service.js";
 import postModel from "../models/post.model.js";
-console.log(postModel)
 
 const createPost = async (req, res) => {
     
-    console.log(postModel)
     if (!req.file) {
       return res.status(400).json({
         success: false,
